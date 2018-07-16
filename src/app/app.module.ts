@@ -11,6 +11,9 @@ import { AddressCardComponent } from './address-card/address-card.component';
 import { TextboxComponent } from './textbox/textbox.component';
 import { ViewModule } from './modules/view/view.module';
 import { TestService } from './services/test.service';
+import { SettingsComponent } from './settings/settings.component';
+import { SettingsProfileComponent } from './settings-profile/settings-profile.component';
+import { SettingsContactComponent } from './settings-contact/settings-contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { TestService } from './services/test.service';
     PrintMyNameComponent,
     DateComponent,
     AddressCardComponent,
-    TextboxComponent
+    TextboxComponent,
+    SettingsComponent,
+    SettingsProfileComponent,
+    SettingsContactComponent
   ],
   imports: [
     BrowserModule,
