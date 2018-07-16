@@ -8,6 +8,7 @@ import { PrintMyNameComponent } from './print-my-name/print-my-name.component';
 import { DateComponent } from './date/date.component';
 import { AddressCardComponent } from './address-card/address-card.component';
 import { TextboxComponent } from './textbox/textbox.component';
+import { ViewModule } from './modules/view/view.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TextboxComponent } from './textbox/textbox.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
