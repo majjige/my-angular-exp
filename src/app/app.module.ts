@@ -9,6 +9,7 @@ import { DateComponent } from './date/date.component';
 import { AddressCardComponent } from './address-card/address-card.component';
 import { TextboxComponent } from './textbox/textbox.component';
 import { ViewModule } from './modules/view/view.module';
+import { TestService } from './services/test.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { ViewModule } from './modules/view/view.module';
     AppRoutingModule,
     ViewModule
   ],
-  providers: [],
+  providers: [
+    TestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestService } from '../services/test.service';
 
 @Component({
   selector: 'app-date',
@@ -8,13 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class DateComponent implements OnInit {
 
   message: string;
+  counter = 0;
 
-  constructor() {
+  constructor(private testService: TestService) {
     setInterval(() => {
-    const date = new Date();
+      const date = new Date();
       this.message = date.toDateString() + ' ' + date.toLocaleTimeString();
-
-    }, 100);
+      this.counter++;
+      testService.printToConsole('Refreshing the date ' + this.counter);
+    }, 1000);
 
   }
 
