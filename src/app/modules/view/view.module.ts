@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DateComponent } from './date/date.component';
+import { GitInfoComponent } from './git-info/git-info.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [DateComponent],
+  declarations: [DateComponent, GitInfoComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
-    DateComponent
+    DateComponent,
+    GitInfoComponent
   ]
 })
 export class ViewModule { }
